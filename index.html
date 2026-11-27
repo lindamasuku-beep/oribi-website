@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="tonal" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORIBI: Impact incubator in South Africa</title>
+<meta name="description" content="ORIBI supports South African social entrepreneurs through incubation cohorts, mentorship, food-system partnerships, and civil society training.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ORIBI: Impact incubator in South Africa">
+<meta property="og:description" content="Cohort mentorship, venture building, and civil society training for South African social entrepreneurs.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0f1c33">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hi/hero-poster.jpg" media="(min-width: 640px)">
+<link rel="preload" as="image" href="images/hi/hero-poster-mobile.jpg" media="(max-width: 639px)">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="styles/experience.css">
+<style>
+:root {
+  --p-bg: #f7f6f2; --p-surface: #eceae2; --p-ink: #0f1c33; --p-muted: #5d6777;
+  --p-accent: #012c7a; --p-accent-ink: #f7f6f2; --p-action: #012c7a; --p-action-ink: #f7f6f2;
+  --p-inv-bg: #0f1c33; --p-inv-surface: #1c293f; --p-inv-ink: #f7f6f2; --p-inv-muted: #969ca5;
+  --p-inv-accent: #f7f6f2; --p-inv-accent-ink: #0f1c33; --p-inv-action: #f7f6f2; --p-inv-action-ink: #0f1c33;
+  --font-display: "Schibsted Grotesk", system-ui, sans-serif;
+  --font-text: "Schibsted Grotesk", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.042em;
+  --ly-scale: 0.98;
+}
+.xp-hero__backdrop > picture { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.apply-facts li { padding-block: var(--s-3); }
+.xp-founder-doc-copy {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 1.15vw + 15px, 27px);
+  line-height: 1.32;
+  letter-spacing: -0.025em;
+  color: var(--oribi-navy);
+  margin: 0;
+}
+.xp-doc-gallery {
+  margin-top: clamp(24px, 3vw, 36px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+}
+.xp-doc-tile {
+  position: relative;
+  margin: 0;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  background: var(--oribi-navy);
+}
+.xp-doc-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--pos, 50% 35%);
+}
+.xp-doc-tile figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 28px 16px 12px;
+  background: linear-gradient(180deg, transparent 0%, rgba(9, 18, 36, 0.84) 100%);
+  color: var(--oribi-ink-inv);
+  font-size: var(--t-label);
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .xp-doc-gallery { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<header class="nav nav--centre xp-header is-over-hero" data-site-header>
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top">
+      <img class="nav__logo-dark" src="images/logo-colour-160.png" alt="ORIBI" width="78" height="34">
+      <img class="nav__logo-light" src="images/logo-white.png" alt="" aria-hidden="true" width="78" height="34">
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#programs">Programmes <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-3">
+              <p class="t-label">Founders</p>
+              <a href="#apply" data-program-apply="Girls in Business">Girls in Business<span>Youth workshops and mentoring</span></a>
+              <a href="#apply" data-program-apply="Bridging the Gender Gaps">Bridging the Gender Gaps<span>Township and rural women founders</span></a>
+              <a href="#apply" data-program-apply="Food System">Food System<span>Local sustainable food ventures</span></a>
+            </div>
+            <div class="menu-col span-3">
+              <p class="t-label">Cities &amp; civil society</p>
+              <a href="#apply" data-program-apply="AfriFOODlinks">AfriFOODlinks<span>African municipal food networks</span></a>
+              <a href="#apply" data-program-apply="Reach CSOs">Reach CSOs<span>Green social enterprise support</span></a>
+              <a href="#apply" data-program-apply="CSO Training">CSO Training<span>Educator training for local staff</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#model">Incubation</a></div>
+      <div class="nav__item"><a class="nav__link" href="#founders">Founders</a></div>
+      <div class="nav__item"><a class="nav__link" href="#apply">Apply</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#apply">Apply for incubation</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="xp-progress" data-scroll-progress aria-hidden="true"></div>
+</header>
+
+<main id="top">
+  <section class="xp-hero" data-cinema-hero aria-labelledby="hero-h">
+    <div class="xp-hero__backdrop" data-hero-parallax>
+      <picture>
+        <source media="(max-width: 639px)" srcset="images/hi/hero-poster-mobile.jpg">
+        <img class="xp-hero__poster" src="images/hi/hero-poster.jpg" width="1920" height="1080" style="--hero-pos: 52% 28%" alt="" fetchpriority="high" decoding="async">
+      </picture>
+      <video class="xp-hero__video" data-hero-video autoplay muted loop playsinline preload="metadata" poster="images/hi/hero-poster.jpg" style="--hero-pos: 60% 35%" aria-hidden="true">
+        <source src="media/oribi-ambient-loop.mp4" type="video/mp4">
+      </video>
+      <div class="xp-hero__scrim" aria-hidden="true"></div>
+    </div>
+
+    <div class="xp-hero__content">
+      <div class="xp-hero__main">
+        <p class="xp-hero__kicker" data-hero-stagger>
+          <span class="xp-hero__kicker-dot" aria-hidden="true"></span>
+          South African Social-Impact Incubator · Western Cape &amp; National
+        </p>
+        <h1 id="hero-h" class="xp-hero__title" data-hero-reveal>Impact incubator in South Africa</h1>
+        <p class="xp-hero__lead" data-hero-stagger>Cohort mentorship, venture building, and civil society training for South African social entrepreneurs turning local ideas into lasting enterprises.</p>
+        <div class="xp-hero__actions" data-hero-stagger>
+          <a class="btn xp-btn-amber" href="#apply">
+            Apply for incubation
+            <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>
+          </a>
+          <button class="xp-film-btn" type="button" data-video-open="media/oribi-founder-reel.mp4" data-video-title="Lillian Masebenza — Mhani Gingi (ORIBI Founder Film)" data-video-poster="images/hi/founder-lillian.jpg">
+            <span class="xp-film-btn__disc" aria-hidden="true">
+              <svg viewBox="0 0 18 18"><path d="M4.5 2.6v12.8c0 .8.9 1.3 1.6.9l10.3-6.4c.6-.4.6-1.3 0-1.7L6.1 1.7c-.7-.4-1.6.1-1.6.9Z" fill="currentColor"/></svg>
+            </span>
+            <span class="xp-film-btn__meta">
+              Watch founder film
+              <small>Lillian Masebenza · Mhani Gingi</small>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="xp-hero__foot" data-hero-stagger>
+        <dl class="xp-hero__stats">
+          <div>
+            <dt>Entrepreneurs supported</dt>
+            <dd>110</dd>
+          </div>
+          <div>
+            <dt>Economic opportunities</dt>
+            <dd>375+</dd>
+          </div>
+          <div>
+            <dt>Indirect beneficiaries</dt>
+            <dd>10,000+</dd>
+          </div>
+        </dl>
+        <button class="xp-ambient-toggle" type="button" data-hero-toggle aria-pressed="false" aria-label="Pause background video">
+          <svg class="icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 3h3v10H4zM9 3h3v10H9z" fill="currentColor"/></svg>
+          <svg class="icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.8v10.4L13 8 4 2.8z" fill="currentColor"/></svg>
+          <span data-hero-toggle-label>Pause reel</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="xp-section xp-impact-band" aria-label="ORIBI impact">
+    <div class="wrap">
+      <div class="xp-impact-grid">
+        <div class="xp-impact-card" data-reveal>
+          <span class="xp-impact-num" data-count-to="110">110</span>
+          <p class="xp-impact-label">Entrepreneurs supported</p>
+          <p class="xp-impact-note">Social ventures incubated across South Africa through structured cohorts.</p>
+        </div>
+        <div class="xp-impact-card" data-reveal data-reveal-delay="80">
+          <span class="xp-impact-num" data-count-to="375" data-count-suffix="+">375+</span>
+          <p class="xp-impact-label">Economic opportunities</p>
+          <p class="xp-impact-note">Jobs and sustainable livelihoods created by ORIBI-incubated founders.</p>
+        </div>
+        <div class="xp-impact-card" data-reveal data-reveal-delay="160">
+          <span class="xp-impact-num" data-count-to="10000" data-count-suffix="+">10,000+</span>
+          <p class="xp-impact-label">Indirect beneficiaries</p>
+          <p class="xp-impact-note">Community members reached through local food and inclusion ventures.</p>
+        </div>
+        <div class="xp-impact-card" data-reveal data-reveal-delay="240">
+          <span class="xp-impact-num" data-count-to="5000" data-count-suffix="+">5,000+</span>
+          <p class="xp-impact-label">Event participants</p>
+          <p class="xp-impact-note">Founders, youth, and civil society practitioners across open workshops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xp-section xp-programs" id="programs" data-program-stage aria-labelledby="programs-h">
+    <div class="wrap">
+      <div class="xp-programs__head" data-reveal>
+        <div>
+          <span class="xp-eyebrow">Incubation programmes</span>
+          <h2 id="programs-h">Six incubation programmes. <span class="muted">Women, food systems, and civil society.</span></h2>
+          <p>Explore how ORIBI backs South African founders and civil society organisations from first workshop to market-ready venture.</p>
+        </div>
+        <a class="btn btn--primary" href="#apply">Apply for incubation</a>
+      </div>
+
+      <div class="xp-prog-layout">
+        <div class="xp-prog-list" role="tablist" aria-label="ORIBI incubation programmes">
+          <button
+            type="button"
+            class="xp-prog-item is-active"
+            role="tab"
+            aria-selected="true"
+            data-program-item="girls-in-business"
+            data-program-name="Girls in Business"
+            data-program-tag="Youth"
+            data-program-metric="Workshops &amp; mentorship"
+            data-program-desc="Hands-on workshops, peer cohorts, and mentorship equipping young women in South Africa to build purpose-driven social ventures.">
+            <span class="xp-prog-item__num">01</span>
+            <span class="xp-prog-item__name">Girls in Business</span>
+            <span class="xp-prog-item__tag">Youth</span>
+            <span class="xp-prog-item__summary">Workshops and mentorship for young women building social ventures.</span>
+          </button>
+
+          <button
+            type="button"
+            class="xp-prog-item"
+            role="tab"
+            aria-selected="false"
+            data-program-item="bridging-the-gender-gaps"
+            data-program-name="Bridging the Gender Gaps"
+            data-program-tag="Women"
+            data-program-metric="Townships &amp; rural areas"
+            data-program-desc="Dedicated business coaching and showcase networks supporting women founders growing enterprises in South African townships and rural communities.">
+            <span class="xp-prog-item__num">02</span>
+            <span class="xp-prog-item__name">Bridging the Gender Gaps</span>
+            <span class="xp-prog-item__tag">Women</span>
+            <span class="xp-prog-item__summary">Business coaching for women founders in townships and rural areas.</span>
+          </button>
+
+          <button
+            type="button"
+            class="xp-prog-item"
+            role="tab"
+            aria-selected="false"
+            data-program-item="food-system"
+            data-program-name="Food System"
+            data-program-tag="Food"
+            data-program-metric="Sustainable supply chains"
+            data-program-desc="Sector-specific incubation for culinary, agri-food, and distribution founders strengthening local sustainable food supply chains.">
+            <span class="xp-prog-item__num">03</span>
+            <span class="xp-prog-item__name">Food System</span>
+            <span class="xp-prog-item__tag">Food</span>
+            <span class="xp-prog-item__summary">Incubation for founders building sustainable local food supply chains.</span>
+          </button>
+
+          <button
+            type="button"
+            class="xp-prog-item"
+            role="tab"
+            aria-selected="false"
+            data-program-item="afrifoodlinks"
+            data-program-name="AfriFOODlinks"
+            data-program-tag="Cities"
+            data-program-metric="African municipalities"
+            data-program-desc="Collaborative urban food and nutrition partnerships linking growers, social enterprises, and African municipal food networks.">
+            <span class="xp-prog-item__num">04</span>
+            <span class="xp-prog-item__name">AfriFOODlinks</span>
+            <span class="xp-prog-item__tag">Cities</span>
+            <span class="xp-prog-item__summary">City food and nutrition partnerships with African municipalities.</span>
+          </button>
+
+          <button
+            type="button"
+            class="xp-prog-item"
+            role="tab"
+            aria-selected="false"
+            data-program-item="reach-csos"
+            data-program-name="Reach CSOs"
+            data-program-tag="CSOs"
+            data-program-metric="Green enterprise &amp; inclusion"
+            data-program-desc="Targeted venture support and visibility for South African civil society organisations advancing green social enterprise and local inclusion.">
+            <span class="xp-prog-item__num">05</span>
+            <span class="xp-prog-item__name">Reach CSOs</span>
+            <span class="xp-prog-item__tag">CSOs</span>
+            <span class="xp-prog-item__summary">Support for civil society teams advancing green enterprise and inclusion.</span>
+          </button>
+
+          <button
+            type="button"
+            class="xp-prog-item"
+            role="tab"
+            aria-selected="false"
+            data-program-item="cso-training"
+            data-program-name="CSO Training"
+            data-program-tag="Educators"
+            data-program-metric="Local capacity building"
+            data-program-desc="Practical facilitation and curriculum training equipping civil society staff to teach social entrepreneurship directly inside their communities.">
+            <span class="xp-prog-item__num">06</span>
+            <span class="xp-prog-item__name">CSO Training</span>
+            <span class="xp-prog-item__tag">Educators</span>
+            <span class="xp-prog-item__summary">Training civil society staff to teach social entrepreneurship locally.</span>
+          </button>
+        </div>
+
+        <div class="xp-prog-stage" data-reveal="image">
+          <div class="xp-prog-viewport">
+            <figure class="xp-prog-slide is-active" data-program-slide="girls-in-business" aria-hidden="false">
+              <img src="images/hi/prog-girls-in-business.jpg" width="1600" height="1067" style="--pos: 48% 28%" alt="Young women participants holding an ORIBI Girls in Business workbook while reviewing enterprise principles on a workshop wall" decoding="async">
+            </figure>
+            <figure class="xp-prog-slide" data-program-slide="bridging-the-gender-gaps" aria-hidden="true">
+              <img src="images/hi/prog-gender-gaps.jpg" width="1600" height="1067" style="--pos: 50% 34%" alt="Two South African women founders smiling warmly together in front of a KasiKonnect backdrop at an ORIBI Bridging the Gender Gaps event" loading="lazy" decoding="async">
+            </figure>
+            <figure class="xp-prog-slide" data-program-slide="food-system" aria-hidden="true">
+              <img src="images/hi/prog-food-system.jpg" width="1600" height="1067" style="--pos: 50% 32%" alt="A diverse cohort of South African food-system entrepreneurs smiling together in denim aprons inside a Cape Town commercial kitchen" loading="lazy" decoding="async">
+            </figure>
+            <figure class="xp-prog-slide" data-program-slide="afrifoodlinks" aria-hidden="true">
+              <img src="images/hi/prog-afrifoodlinks.jpg" width="1600" height="1067" style="--pos: 50% 48%" alt="An urban food grower crouching beside trays of fresh green herbs while holding healthy seedlings and rich soil for local municipal food networks" loading="lazy" decoding="async">
+            </figure>
+            <figure class="xp-prog-slide" data-program-slide="reach-csos" aria-hidden="true">
+              <img src="images/hi/prog-reach-cso.jpg" width="1600" height="900" style="--pos: 48% 26%" alt="A South African social entrepreneur speaking into a microphone on stage beside ORIBI and Luhnyezi Farms banners during a Reach CSOs showcase" loading="lazy" decoding="async">
+            </figure>
+            <figure class="xp-prog-slide" data-program-slide="cso-training" aria-hidden="true">
+              <img src="images/hi/prog-cso-training.jpg" width="1600" height="1067" style="--pos: 50% 30%" alt="Civil society educators and facilitators smiling together around a workshop table with food-system training materials in Cape Town" loading="lazy" decoding="async">
+            </figure>
+          </div>
+          <div class="xp-prog-scrim" aria-hidden="true"></div>
+          <div class="xp-prog-overlay">
+            <div class="xp-prog-badges">
+              <span class="xp-prog-pill xp-prog-pill--accent" data-program-active-tag>Youth</span>
+              <span class="xp-prog-pill" data-program-active-metric>Workshops &amp; mentorship</span>
+            </div>
+            <div class="xp-prog-details">
+              <h3 class="xp-prog-details__title" data-program-active-title>Girls in Business</h3>
+              <p class="xp-prog-details__desc" data-program-active-desc>Hands-on workshops, peer cohorts, and mentorship equipping young women in South Africa to build purpose-driven social ventures.</p>
+              <a class="btn xp-btn-amber xp-prog-cta" href="#apply" data-program-apply="Girls in Business">
+                <span data-program-apply-label>Apply for Girls in Business</span>
+                <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xp-story" id="model" data-story-chapters aria-labelledby="model-h">
+    <div class="xp-story__sticky">
+      <div class="xp-story__media" aria-hidden="true">
+        <figure class="xp-story__frame" data-story-frame="0">
+          <img src="images/hi/chapter-01-trust-yourself.jpg" width="1920" height="1080" style="--pos: 50% 24%" alt="" decoding="async">
+        </figure>
+        <figure class="xp-story__frame" data-story-frame="1">
+          <img src="images/hi/chapter-02-trust-solution.jpg" width="1920" height="1080" style="--pos: 50% 22%" alt="" loading="lazy" decoding="async">
+        </figure>
+        <figure class="xp-story__frame" data-story-frame="2">
+          <img src="images/hi/chapter-03-trust-community.jpg" width="1680" height="945" style="--pos: 50% 42%" alt="" loading="lazy" decoding="async">
+        </figure>
+        <div class="xp-story__scrim"></div>
+      </div>
+
+      <div class="xp-story__header">
+        <div class="xp-story__header-copy">
+          <span class="xp-eyebrow xp-eyebrow--light">The ORIBI Trust Model</span>
+          <h2 id="model-h">How our incubation model works</h2>
+          <p>Three pillars moving founders from peer confidence to structured enterprises and lasting local markets.</p>
+        </div>
+        <div class="xp-story__nav" role="group" aria-label="Jump to incubation pillar">
+          <button type="button" class="xp-story__jump is-active" data-story-jump="0" aria-pressed="true">01 Trust yourself</button>
+          <button type="button" class="xp-story__jump" data-story-jump="1" aria-pressed="false">02 Trust your solution</button>
+          <button type="button" class="xp-story__jump" data-story-jump="2" aria-pressed="false">03 Trust your community</button>
+        </div>
+      </div>
+
+      <div class="xp-story__cards-wrap">
+        <div class="xp-story__card">
+          <div class="xp-story__card-meta">
+            <span class="xp-story__counter" data-story-counter>01 / 03</span>
+            <div class="xp-story__progress-track" aria-hidden="true">
+              <div class="xp-story__progress-fill" data-story-progress></div>
+            </div>
+          </div>
+
+          <ol class="xp-story__chapters">
+            <li class="xp-story__chapter is-active" data-story-chapter="0" aria-current="step">
+              <figure class="xp-story__chapter-mobile-pic">
+                <img src="images/hi/chapter-01-trust-yourself.jpg" width="1920" height="1080" style="--pos: 50% 24%" alt="An ORIBI mentor and young women founders seated outdoors in sunlight with notebooks during a peer mentoring workshop" loading="lazy" decoding="async">
+              </figure>
+              <div class="xp-story__chapter-body">
+                <span class="xp-story__chapter-step">Pillar 01 · Founder agency</span>
+                <h3>1. Trust yourself in founder cohorts</h3>
+                <p>Women and youth founders build practical agency through peer cohorts, open workshops, and lasting local connections.</p>
+              </div>
+            </li>
+
+            <li class="xp-story__chapter" data-story-chapter="1" aria-current="false">
+              <figure class="xp-story__chapter-mobile-pic">
+                <img src="images/hi/chapter-02-trust-solution.jpg" width="1920" height="1080" style="--pos: 50% 22%" alt="A smiling young South African urban farmer tending seedlings with a watering can in an outdoor planter box" loading="lazy" decoding="async">
+              </figure>
+              <div class="xp-story__chapter-body">
+                <span class="xp-story__chapter-step">Pillar 02 · Business mentorship</span>
+                <h3>2. Trust your solution with business mentorship</h3>
+                <p>Early ideas become structured social enterprises through hands-on coaching, e-learning, mentorship, and sector specialists.</p>
+              </div>
+            </li>
+
+            <li class="xp-story__chapter" data-story-chapter="2" aria-current="false">
+              <figure class="xp-story__chapter-mobile-pic">
+                <img src="images/hi/chapter-03-trust-community.jpg" width="1680" height="945" style="--pos: 50% 42%" alt="Young South African community members seated together on green turf inside a sunlit open-air mural pavilion in Cape Town" loading="lazy" decoding="async">
+              </figure>
+              <div class="xp-story__chapter-body">
+                <span class="xp-story__chapter-step">Pillar 03 · Ecosystem &amp; partners</span>
+                <h3>3. Trust your community and local partners</h3>
+                <p>Ventures reach markets and finance by linking knowledge, policy, and networks across formal and informal South African economies.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="xp-story__chapter-controls">
+            <span class="xp-story__step-hint">Scroll or step through pillars</span>
+            <div class="xp-story__arrows">
+              <button type="button" class="xp-icon-btn" data-story-prev aria-label="Previous pillar" disabled>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button type="button" class="xp-icon-btn" data-story-next aria-label="Next pillar">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xp-section xp-founders" id="founders" data-founder-stage aria-labelledby="founders-h">
+    <div class="wrap">
+      <div class="xp-founders__head" data-reveal>
+        <div>
+          <span class="xp-eyebrow">Founder voices &amp; film</span>
+          <h2 id="founders-h">Founders from recent cohorts. <span class="muted">110 ventures built across South Africa.</span></h2>
+        </div>
+        <a class="btn btn--primary" href="#apply">Apply for incubation</a>
+      </div>
+
+      <div class="xp-founder-grid">
+        <div class="xp-founder-media" data-reveal="image">
+          <figure class="xp-founder-slide is-active" data-founder-slide="leon" aria-hidden="false">
+            <img src="images/hi/founder-leon.jpg" width="560" height="560" style="--pos: 50% 20%" alt="Portrait of Leon Qwabe, founder of Order Kasi and 2021 ORIBI incubation cohort alumnus" loading="lazy" decoding="async">
+            <figcaption class="xp-founder-slide__caption">
+              <div class="xp-founder-slide__meta">
+                <strong>Leon Qwabe</strong>
+                <span>Founder, Order Kasi · 2021 Cohort</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="xp-founder-slide" data-founder-slide="ezile" aria-hidden="true">
+            <img src="images/hi/founder-ezile.jpg" width="600" height="600" style="--pos: 50% 20%" alt="Portrait of Ezile Qoboka, founder of Engingqini Distinct Flavour and Catering and 2024 ORIBI cohort alumna" loading="lazy" decoding="async">
+            <figcaption class="xp-founder-slide__caption">
+              <div class="xp-founder-slide__meta">
+                <strong>Ezile Qoboka</strong>
+                <span>Founder, Engingqini Distinct Flavour &amp; Catering · 2024 Cohort</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="xp-founder-slide" data-founder-slide="lillian" aria-hidden="true">
+            <img src="images/hi/founder-lillian.jpg" width="1440" height="810" style="--pos: 60% 22%" alt="Lillian Masebenza, founder of Mhani Gingi, smiling warmly in front of vertical green herb planters during her ORIBI founder interview" loading="lazy" decoding="async">
+            <figcaption class="xp-founder-slide__caption">
+              <div class="xp-founder-slide__meta">
+                <strong>Lillian Masebenza</strong>
+                <span>Founder, Mhani Gingi · ORIBI Founder Film</span>
+              </div>
+              <button class="xp-film-btn" type="button" data-video-open="media/oribi-founder-reel.mp4" data-video-title="Lillian Masebenza — Mhani Gingi (ORIBI Founder Film)" data-video-poster="images/hi/founder-lillian.jpg">
+                <span class="xp-film-btn__disc" aria-hidden="true">
+                  <svg viewBox="0 0 18 18"><path d="M4.5 2.6v12.8c0 .8.9 1.3 1.6.9l10.3-6.4c.6-.4.6-1.3 0-1.7L6.1 1.7c-.7-.4-1.6.1-1.6.9Z" fill="currentColor"/></svg>
+                </span>
+                <span class="xp-film-btn__meta">
+                  Play film
+                  <small>2 min 48 sec</small>
+                </span>
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="xp-founder-body">
+          <div class="xp-founder-quotes">
+            <figure class="xp-founder-quote is-active" data-founder-quote="leon" aria-hidden="false">
+              <span class="xp-quote-mark" aria-hidden="true">&ldquo;</span>
+              <blockquote>“ORIBI taught us what an impact enterprise entails. The programme helped us structure Order Kasi as a company, set execution timelines, and build lasting partnerships.”</blockquote>
+              <figcaption>
+                <div class="xp-founder-person">
+                  <img src="images/hi/founder-leon.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                  <div>
+                    <span class="xp-founder-person__name">Leon Qwabe</span>
+                    <span class="xp-founder-person__role">Founder, Order Kasi · 2021 Cohort</span>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="xp-founder-quote" data-founder-quote="ezile" aria-hidden="true">
+              <span class="xp-quote-mark" aria-hidden="true">&ldquo;</span>
+              <blockquote>“Collaboration with other founders shaped my business. After completing the cohort, I returned as a mentor for the Girls in Business programme.”</blockquote>
+              <figcaption>
+                <div class="xp-founder-person">
+                  <img src="images/hi/founder-ezile.jpg" alt="" width="44" height="44" loading="lazy" decoding="async">
+                  <div>
+                    <span class="xp-founder-person__name">Ezile Qoboka</span>
+                    <span class="xp-founder-person__role">Founder, Engingqini Distinct Flavour &amp; Catering · 2024 Cohort</span>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="xp-founder-quote" data-founder-quote="lillian" aria-hidden="true">
+              <span class="xp-eyebrow">Founder documentary · 2 min 48 sec</span>
+              <p class="xp-founder-doc-copy">Watch Lillian Masebenza of Mhani Gingi share her social entrepreneurship journey and urban food garden work in Cape Town in ORIBI’s founder film.</p>
+              <figcaption>
+                <div class="xp-founder-person">
+                  <img src="images/hi/founder-lillian.jpg" alt="" width="44" height="44" style="object-position: 60% 22%" loading="lazy" decoding="async">
+                  <div>
+                    <span class="xp-founder-person__name">Lillian Masebenza</span>
+                    <span class="xp-founder-person__role">Founder, Mhani Gingi · Featured Documentary</span>
+                  </div>
+                </div>
+                <button class="btn btn--primary" type="button" data-video-open="media/oribi-founder-reel.mp4" data-video-title="Lillian Masebenza — Mhani Gingi (ORIBI Founder Film)" data-video-poster="images/hi/founder-lillian.jpg">Watch founder film</button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="xp-founder-controls">
+            <div class="xp-founder-bar" aria-hidden="true">
+              <div class="xp-founder-bar__fill" data-founder-progress></div>
+            </div>
+            <div class="xp-founder-tabs" role="tablist" aria-label="Select founder story">
+              <button type="button" class="xp-founder-tab is-active" role="tab" aria-selected="true" data-founder-tab="leon">
+                <strong>Leon Qwabe</strong>
+                <span>Order Kasi</span>
+              </button>
+              <button type="button" class="xp-founder-tab" role="tab" aria-selected="false" data-founder-tab="ezile">
+                <strong>Ezile Qoboka</strong>
+                <span>Engingqini Catering</span>
+              </button>
+              <button type="button" class="xp-founder-tab" role="tab" aria-selected="false" data-founder-tab="lillian">
+                <strong>Lillian Masebenza</strong>
+                <span>Mhani Gingi · Film</span>
+              </button>
+            </div>
+            <div class="xp-founder-navrow">
+              <span class="xp-founder-counter" data-founder-counter>01 / 03</span>
+              <div class="xp-story__arrows">
+                <button type="button" class="xp-icon-btn" data-founder-prev aria-label="Previous founder">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button type="button" class="xp-icon-btn" data-founder-next aria-label="Next founder">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-doc-gallery" aria-label="Scenes from ORIBI cohorts">
+        <figure class="xp-doc-tile" data-reveal="image">
+          <img src="images/hi/gallery-cohort-graduation.jpg" width="1600" height="1067" style="--pos: 50% 34%" alt="A joyful cohort of young South African entrepreneurs celebrating and raising their ORIBI completion certificates" loading="lazy" decoding="async">
+          <figcaption>Youth cohort graduation</figcaption>
+        </figure>
+        <figure class="xp-doc-tile" data-reveal="image" data-reveal-delay="80">
+          <img src="images/hi/gallery-cso-ecosystem.jpg" width="1600" height="1067" style="--pos: 50% 56%" alt="South African civil society representatives gathered in a bright hall around discussion tables beside nature-positive ecosystem mapping charts" loading="lazy" decoding="async">
+          <figcaption>Civil society ecosystem mapping</figcaption>
+        </figure>
+        <figure class="xp-doc-tile" data-reveal="image" data-reveal-delay="160">
+          <img src="images/hi/gallery-founders-sunlight.jpg" width="1600" height="1067" style="--pos: 50% 22%" alt="Four smiling ORIBI team members and social entrepreneurs standing outdoors in warm afternoon light" loading="lazy" decoding="async">
+          <figcaption>Founders &amp; mentors in Cape Town</figcaption>
+        </figure>
+      </div>
+
+      <div class="xp-pulse-strip" data-reveal>
+        <div class="xp-pulse-strip__copy">
+          <strong>5 international hubs · Groupe SOS PULSE</strong>
+          <p>Part of the Groupe SOS PULSE network linking social-impact incubators across South Africa, Tunisia, Senegal, France, and the Balkans.</p>
+        </div>
+        <a class="link" href="https://www.pulse-group.org/en">Read about PULSE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="xp-section xp-apply" id="apply" aria-labelledby="apply-h">
+    <div class="wrap">
+      <div class="xp-apply-grid">
+        <div class="xp-apply-info" data-reveal>
+          <div class="section-head">
+            <span class="xp-eyebrow">Upcoming cohorts</span>
+            <h2 id="apply-h">Apply for incubation</h2>
+            <p>Early-stage social ventures, women and youth founders, food-system teams, and South African civil society organisations can apply for upcoming cohorts.</p>
+          </div>
+          <ul class="rows apply-facts">
+            <li><span class="rows__name">Region</span><span class="rows__value">Western Cape &amp; national</span></li>
+            <li><span class="rows__name">Workshops</span><span class="rows__value">5,000+ participants</span></li>
+            <li><span class="rows__name">Network</span><span class="rows__value">Groupe SOS PULSE (5 hubs)</span></li>
+          </ul>
+          <div class="xp-apply-photo" data-reveal="image">
+            <img src="images/hi/apply-oribi-team.jpg" width="1600" height="1000" style="--pos: 50% 24%" alt="Ten members of the ORIBI Cape Town incubation team smiling warmly together in their sunlit studio office" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <div class="xp-apply-card" data-reveal data-reveal-delay="80">
+          <div class="xp-picker" data-program-picker>
+            <span class="xp-picker__label" id="picker-label">Choose a programme</span>
+            <div class="xp-picker__pills" role="group" aria-labelledby="picker-label">
+              <button type="button" class="xp-pill" data-program-pill="Girls in Business" aria-pressed="false">Girls in Business</button>
+              <button type="button" class="xp-pill" data-program-pill="Bridging the Gender Gaps" aria-pressed="false">Bridging the Gender Gaps</button>
+              <button type="button" class="xp-pill" data-program-pill="Food System" aria-pressed="false">Food System</button>
+              <button type="button" class="xp-pill" data-program-pill="AfriFOODlinks" aria-pressed="false">AfriFOODlinks</button>
+              <button type="button" class="xp-pill" data-program-pill="Reach CSOs" aria-pressed="false">Reach CSOs</button>
+              <button type="button" class="xp-pill" data-program-pill="CSO Training" aria-pressed="false">CSO Training</button>
+            </div>
+          </div>
+
+          <form class="form" action="#apply" method="post" data-apply-form data-endpoint="" data-sent="Your incubation enquiry is in. Our team reviews applications in Cape Town." novalidate>
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err" hidden>Write your full name so our team knows who is applying.</p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+              <p class="field__error" id="f-email-err" hidden>Write an email address with an @, like name@organization.org.</p>
+            </div>
+            <div class="field">
+              <label for="f-venture">Venture or organisation</label>
+              <input id="f-venture" name="venture" type="text" autocomplete="organization" required aria-describedby="f-venture-err">
+              <p class="field__error" id="f-venture-err" hidden>Write the name of your venture, idea, or civil society organisation.</p>
+            </div>
+            <div class="field">
+              <label for="f-programme">Programme</label>
+              <input id="f-programme" name="programme" type="text" autocomplete="off" required data-program-input aria-describedby="f-programme-err">
+              <p class="field__error" id="f-programme-err" hidden>Choose a programme pill above or write the programme you are interested in.</p>
+            </div>
+            <div class="field field--full">
+              <label for="f-summary">About your venture</label>
+              <textarea id="f-summary" name="summary" rows="3" required aria-describedby="f-summary-err"></textarea>
+              <p class="field__error" id="f-summary-err" hidden>Write two or three sentences about your venture and the stage you are at.</p>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn--primary" type="submit">Apply for incubation</button>
+            </div>
+            <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+            <p class="t-small muted xp-form-note">Applications are reviewed by the ORIBI incubation team in Western Cape.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing xp-closing" id="contact" aria-labelledby="close-h">
+  <div class="xp-closing__banner">
+    <picture>
+      <source media="(max-width: 639px)" srcset="images/hi/closing-pulse-team-mobile.jpg">
+      <img src="images/hi/closing-pulse-team.jpg" width="1920" height="1080" style="--pos: 50% 34%" alt="Members of the ORIBI and Groupe SOS PULSE international incubation network smiling together outdoors under a clear blue sky" loading="lazy" decoding="async">
+    </picture>
+    <div class="xp-closing__scrim" aria-hidden="true"></div>
+    <div class="wrap xp-closing__banner-inner">
+      <div class="xp-closing__banner-copy">
+        <span class="xp-eyebrow xp-eyebrow--light">Western Cape &amp; National</span>
+        <h2 id="close-h">Build a social venture in South Africa</h2>
+        <p>Backed by Groupe SOS PULSE, AFD, IDC, and local South African partners.</p>
+      </div>
+      <a class="btn xp-btn-amber" href="#apply">
+        Apply for incubation
+        <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="wrap xp-closing__footer">
+    <div class="xp-closing__grid">
+      <div class="xp-closing__brand">
+        <img src="images/logo-white.png" alt="ORIBI" width="78" height="34" loading="lazy" decoding="async">
+        <address class="xp-closing__address">Western Cape, South Africa</address>
+        <p class="t-small muted">Incubation cohorts and civil society training across South Africa.</p>
+      </div>
+      <div class="xp-closing__nav-col">
+        <p class="t-label muted">Explore &amp; connect</p>
+        <ul class="xp-closing__links">
+          <li><a href="#programs">Programmes</a></li>
+          <li><a href="#model">Incubation</a></li>
+          <li><a href="#founders">Founders</a></li>
+          <li><a href="#apply">Apply</a></li>
+          <li><a href="https://www.linkedin.com/company/oribisouthafrica/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/oribi_southafrica/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/OribiSouthAfrica">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xp-closing__legal">
+      <span>&copy; 2026 ORIBI</span>
+      <span>Photographs &amp; film &copy; ORIBI and Groupe SOS PULSE</span>
+    </div>
+  </div>
+</footer>
+
+<div class="xp-modal" data-video-modal role="dialog" aria-modal="true" aria-labelledby="xp-video-modal-title" hidden>
+  <div class="xp-modal__backdrop"></div>
+  <div class="xp-modal__dialog">
+    <div class="xp-modal__bar">
+      <h2 id="xp-video-modal-title" class="xp-modal__title" data-video-modal-title>Lillian Masebenza — Mhani Gingi (ORIBI Founder Film)</h2>
+      <button class="xp-modal__close" type="button" data-video-close aria-label="Close video">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="xp-modal__frame">
+      <video class="xp-modal__video" data-video-player controls playsinline preload="none"></video>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="scripts/experience.js"></script>
+</body>
+</html>
